@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Hotel.Model
 {
-    internal class Suite
+    public class Suite
     {
+        public string Nome { get; set; }
+        public double DiariaAdulto { get; set; }
+        public double DiariaCrianca { get; set; }
     }
 }
