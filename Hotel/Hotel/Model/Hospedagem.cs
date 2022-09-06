@@ -6,7 +6,7 @@ namespace Hotel.Model
 {
     public class Hospedagem
     {
-        int qnt_adultos;
+        public int qnt_adultos;
         Suite quarto_escolhido;
         
         public Suite QuartoEscolhido

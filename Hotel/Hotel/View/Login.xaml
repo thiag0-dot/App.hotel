@@ -4,9 +4,21 @@
              x:Class="Hotel.View.Login">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame CornerRadius="10"
+                   Margin="20"
+                   VerticalOptions="CenterAndExpand"
+                   Padding="10">
+
+                <StackLayout>
+                    <Label Text="LOGIN HOTEL" FontSize="Title"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="Usuário:" />
+                    <Entry x:Name="txt_usuario" />
+                    <Label Text="Senha:" />
+                    <Entry IsPassword="True" x:Name="txt_senha" />
+                    <Button Text="Entrar" Clicked="Button_Clicked" />
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

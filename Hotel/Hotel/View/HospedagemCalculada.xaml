@@ -15,7 +15,7 @@
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="Adultos: "/>
-                                <Span Text="{Binding QntAdultos}" TextColor="DarkRed"
+                                <Span Text="{Binding QntAdultos}" TextColor="DarkRed"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
@@ -23,7 +23,7 @@
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="Crianças: "/>
-                                <Span Text="{Binding QntCriancas}" TextColor="DarkRed"
+                                <Span Text="{Binding QntCriancas}" TextColor="DarkRed"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>

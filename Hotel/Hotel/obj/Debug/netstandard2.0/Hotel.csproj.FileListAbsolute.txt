@@ -1,0 +1,2 @@
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\Hotel.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\Hotel.GeneratedMSBuildEditorConfig.editorconfig

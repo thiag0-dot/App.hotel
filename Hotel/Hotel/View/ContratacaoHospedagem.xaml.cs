@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using Hotel.Model;
+
 namespace Hotel.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -45,11 +47,11 @@ namespace Hotel.View
                 {
                     BindingContext = new Hospedagem()
                     {
-                        QntAdultos = Convert.ToInt32(lbl_qnt_adultos.Text),
-                        QntCriancas = Convert.ToInt32(lbl_qnt_criancas.Text),
+                        qnt_adultos = Convert.ToInt32(lbl_qnt_adultos.Text),
+                        qntcriancas = Convert.ToInt32(lbl_qnt_criancas.Text),
                         QuartoEscolhido = (Suite)pck_suite.SelectedItem,
-                        DataCheckIn = dtpck_checkin.Date,
-                        DataCheckOut = dtpck_checkout.Date
+                        DatacheckIn = dtpck_checkin.Date,
+                        datacheckOut = dtpck_checkout.Date
                     }
                 });
             }
