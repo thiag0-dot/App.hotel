@@ -1,12 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Hotel.View.HospedagemCalculada">
+             x:Class="Hotel.View.HospedagemCalculada"
+             Padding="10">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Detalhes da Estadia"/>
+            <Label Text="{Binding Path=QuartoEscolhido.Nome}"
+                   FontSize="Title"/>
+
+            <Frame CornerRadius="10">
+                <StackLayout Orientation="Horizontal">
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Adultos: "/>
+                                <Span Text="{Binding QntAdultos}" TextColor="DarkRed"
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Crianças: "/>
+                                <Span Text="{Binding QntCriancas}" TextColor="DarkRed"
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10">
+                <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*">
+                    <Label Grid.Row="0" Grid.Column="0" Text="Data CheckIn: "/>
+                    <Label Grid.Row="0" Grid.Column="1" Text="Data CheckOut: "/>
+                    <Label Grid.Row="0" Grid.Column="2" Text="Estadia: "/>
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}' }" />
+                    <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}" />
+                </Grid>
+            </Frame>
+
+            <Frame CornerRadius="10">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Valor da Hospedagem: "/>
+                            <Span Text="{Binding ValorTotal, StringFormat='{}{0:c}'}" FontSize="Title"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Frame>
+
+            <Button Text="Voltar" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

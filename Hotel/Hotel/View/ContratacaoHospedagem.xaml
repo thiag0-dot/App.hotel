@@ -25,6 +25,15 @@
                                x:Name="lbl_qnt_adultos"
                                BindingContext="{x:Reference stepperAdultos}"
                                Text="{Binding Value}"/>
+                        <Stepper Grid.Row="0" Grid.Column="2"
+                                 x:Name="stepperAdultos"
+                                 Minimum="0" Maximum="10" Increment="1" />
+
+                        <Label Grid.Row="1" Grid.Column="0" Text="Crianças:" />
+                        <Label Grid.Row="1" Grid.Column="1"
+                               x:Name="lbl_qnt_criancas"
+                               BindingContext="{x:Reference stepperCriancas}"
+                               Text="{Binding Value}"/>
                         <Stepper Grid.Row="1" Grid.Column="2"
                                  x:Name="stepperCriancas"
                                  Minimum="0" Maximum="10" Increment="1"/>
