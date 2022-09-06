@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DZPGo+Hr+g2Lc1EfyXlYVw31fJBU9iRGr48Ld3K9xSM7U2dvVCDJaErL6Ps57Nzkj4F2GyES9RR6SXHH5bBH5Q==",
+  "dgSpecHash": "0gBtlvrzKZpaxE+m4U3SXDmj3IiFM99/ce7sP9BBYb7n58K4LIbQ/YYXDZu/vHU9J00gpKR/alRnuu2gmJFcAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Hotel\\Hotel\\Hotel\\Hotel.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\App.hotel\\Hotel\\Hotel\\Hotel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

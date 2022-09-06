@@ -4,9 +4,59 @@
              x:Class="Hotel.View.ContratacaoHospedagem">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Cálculo da Hospedagem"
+                   HorizontalOptions="Center"
+                   FontSize="Title" TextColor="White"/>
+
+            <Label x:Name="lbl_usuario"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"/>
+
+            <Frame CornerRadius="10"
+                   Margin="10, 0, 10,10"
+                   BackgroundColor="#eee"
+                   Padding="20">
+                <StackLayout>
+                    <Grid ColumnDefinitions="*, *, 2*"
+                          RowDefinitions="*, *">
+                        <Label Grid.Row="0" Grid.Column="0"
+                               Text="Adultos:"/>
+                        <Label Grid.Row="0" Grid.Column="1"
+                               x:Name="lbl_qnt_adultos"
+                               BindingContext="{x:Reference stepperAdultos}"
+                               Text="{Binding Value}"/>
+                        <Stepper Grid.Row="1" Grid.Column="2"
+                                 x:Name="stepperCriancas"
+                                 Minimum="0" Maximum="10" Increment="1"/>
+                    </Grid>
+
+                    <Label Text="Escolha sua Suíte"/>
+                    <Picker x:Name="pck_suite"
+                            ItemDisplayBinding="{Binding Nome}"
+                            Title="Selecione sua Acomodação"/>
+                    <Frame BackgroundColor="#ddd" CornerRadius="10" Margin="10">
+                        <StackLayout>
+                            <Label Text="Período da Estadia"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Check-in:"/>
+                                <DatePicker x:Name="dtpck_checkin"
+                                            DateSelected="dtpck_checkin_selected"
+                                            Format="dd/MM/yyyy"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Check-Out:"/>
+                                <DatePicker x:Name="dtpck_checkout"
+                                            Format="dd/MM/yyyy"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="Calcular Hospedagem" Clicked="Button_Clicked"/>
+
+                    <Button Text="Sair" Clicked="Button_Clicked_1"
+                            TextColor="Black"
+                            BackgroundColor="#CCC"/>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

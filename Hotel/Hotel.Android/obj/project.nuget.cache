@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q8tlB/bxKHeLETSeKnKpOeWEP24rz09+hK4jiWOIBdxA8KO397uJdv/v/dIcG9fkbkSXscnsimJydGqbJ/0ULw==",
+  "dgSpecHash": "boz3z1dsX6Hzfoj6KT2Upr50v3BdjALJqpS9t/N/WoaAWbx3/Me7OeKD3e/QoQ3Vnm1rWCPYud3PiMn+rW7cQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Hotel\\Hotel\\Hotel.Android\\Hotel.Android.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\App.hotel\\Hotel\\Hotel.Android\\Hotel.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
