@@ -3,27 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hotel.View.HospedagemCalculada"
              Padding="10">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="#1f7df0" Offset="0.2"/>
+            <GradientStop Color="White" Offset="1.3"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Detalhes da Estadia"/>
+            <Label Text="Detalhes da Estadia" HorizontalOptions="Center"/>
             <Label Text="{Binding Path=QuartoEscolhido.Nome}"
-                   FontSize="Title"/>
+                   FontSize="Title"
+                   HorizontalOptions="Center"/>
 
-            <Frame CornerRadius="10">
-                <StackLayout Orientation="Horizontal">
-                    <Label>
+            <Frame CornerRadius="10" >
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label FontSize="20">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="Adultos: "/>
-                                <Span Text="{Binding Qntadultos}" TextColor="DarkRed"/>
+                                <Span Text="{Binding Qntadultos}" TextColor="#87CEFA"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
-                    <Label>
+                    <Label FontSize="20">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="Crianças: "/>
-                                <Span Text="{Binding qntcriancas}" TextColor="DarkRed"/>
+                                <Span Text="Crianças: " />
+                                <Span Text="{Binding qntcriancas}" TextColor="#87CEFA"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
@@ -46,14 +54,14 @@
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Valor da Hospedagem: "/>
-                            <Span Text="{Binding valortotal, StringFormat='{}{0:c}'}" FontSize="Title"/>
+                            <Span Text="Valor da Hospedagem: " FontSize="20" />
+                            <Span Text="{Binding valortotal, StringFormat='{}{0:c}'}" FontSize="20"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
             </Frame>
 
-            <Button Text="Voltar" Clicked="Button_Clicked"/>
+            <Button Text="Voltar" Clicked="Button_Clicked" BackgroundColor="White" TextColor="Black"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

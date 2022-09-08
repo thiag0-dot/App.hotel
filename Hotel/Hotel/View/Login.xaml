@@ -2,6 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hotel.View.Login">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="#1f7df0" Offset="0.2"/>
+            <GradientStop Color="White" Offset="1.3"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    
     <ContentPage.Content>
         <StackLayout>
             <Frame CornerRadius="10"
@@ -10,13 +18,18 @@
                    Padding="10">
 
                 <StackLayout>
-                    <Label Text="LOGIN HOTEL" FontSize="Title"
-                           HorizontalTextAlignment="Center"/>
-                    <Label Text="Usuário:" />
+                    <Label Text="HOTEL" FontSize="50" FontAttributes="Bold"
+                           TextColor="#87CEFA" 
+                           HorizontalTextAlignment="Center"
+                           Margin="10"/>
+                    <Label Text="Usuário:" TextColor="#87CEFA" FontSize="20" />
                     <Entry x:Name="txt_usuario" />
-                    <Label Text="Senha:" />
-                    <Entry IsPassword="True" x:Name="txt_senha" />
-                    <Button Text="Entrar" Clicked="Button_Clicked" />
+                    <Label Text="Senha:" TextColor="#87CEFA" FontSize="20"/>
+                    <Entry IsPassword="True" x:Name="txt_senha"  />
+                    <Button Text="Entrar" Clicked="Button_Clicked"
+                            BorderColor="#87CEFA" TextColor="#87CEFA"
+                            BorderWidth="2" BackgroundColor="White"
+                            Margin="20"/>
                 </StackLayout>
             </Frame>
         </StackLayout>
