@@ -1,2 +1,17 @@
 C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\Hotel.csproj.AssemblyReference.cache
 C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\Hotel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\View\ContratacaoHospedagem.xaml.g.cs
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\View\HospedagemCalculada.xaml.g.cs
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\View\Login.xaml.g.cs
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\Hotel.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\Hotel.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\Hotel.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\Hotel.dll
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\refint\Hotel.dll
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\Hotel.pdb
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\bin\Debug\netstandard2.0\Hotel.deps.json
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\bin\Debug\netstandard2.0\Hotel.dll
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\bin\Debug\netstandard2.0\Hotel.pdb
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Usuario\Desktop\App.hotel\Hotel\Hotel\obj\Debug\netstandard2.0\ref\Hotel.dll

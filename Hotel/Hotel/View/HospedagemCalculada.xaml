@@ -15,7 +15,7 @@
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="Adultos: "/>
-                                <Span Text="{Binding QntAdultos}" TextColor="DarkRed"/>
+                                <Span Text="{Binding Qntadultos}" TextColor="DarkRed"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
@@ -23,7 +23,7 @@
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="Crianças: "/>
-                                <Span Text="{Binding QntCriancas}" TextColor="DarkRed"/>
+                                <Span Text="{Binding qntcriancas}" TextColor="DarkRed"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
@@ -36,8 +36,8 @@
                     <Label Grid.Row="0" Grid.Column="1" Text="Data CheckOut: "/>
                     <Label Grid.Row="0" Grid.Column="2" Text="Estadia: "/>
 
-                    <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}" />
-                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}' }" />
+                    <Label Grid.Row="1" Grid.Column="0" Text="{Binding DatacheckIn, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding datacheckOut, StringFormat='{}{0:dd/MM/yyyy}' }" />
                     <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}" />
                 </Grid>
             </Frame>
@@ -47,7 +47,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Valor da Hospedagem: "/>
-                            <Span Text="{Binding ValorTotal, StringFormat='{}{0:c}'}" FontSize="Title"/>
+                            <Span Text="{Binding valortotal, StringFormat='{}{0:c}'}" FontSize="Title"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>

@@ -20,6 +20,7 @@ namespace Hotel.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
 
+
             lbl_usuario.Text = App.Current.Properties["usuario_logado"].ToString();
 
             pck_suite.ItemsSource = App.lista_suites;
@@ -39,7 +40,7 @@ namespace Hotel.View
             dtpck_checkout.MaximumDate = elemento.Date.AddDays(1).AddMonths(6);
         }
 
-        private void Button_Clicked(object sender, DateChangedEventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
             try
             {
@@ -70,5 +71,7 @@ namespace Hotel.View
                 App.Current.MainPage = new Login();
             }
         }
+
+        
     }
 }
